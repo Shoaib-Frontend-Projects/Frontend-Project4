@@ -1,0 +1,696 @@
+ont-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-thin-italic-58a8a3a8861fe.otf");
+  font-weight: 100; /* thin */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-light-58a8a4b38001d.otf");
+  font-weight: 300; /* light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-light-italic-58a8a4ccb88be.otf");
+  font-weight: 300; /* light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/HVD\ Fonts\ -\ BrandonGrotesque-Regular.otf");
+  font-weight: 400; /* regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-regular-italic-58a8a456c4724.otf");
+  font-weight: 400; /* regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/HVD\ Fonts\ -\ BrandonGrotesque-Medium.otf");
+  font-weight: 500; /* medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-medium-italic-58a8a3c40866a.otf");
+  font-weight: 500; /* medium */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/HVD\ Fonts\ -\ BrandonGrotesque-Bold.otf");
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-bold-italic-58a8a48221563.otf");
+  font-weight: 700; /* bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("./fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-black-58a8a3e824392.otf");
+  font-weight: 900; /* black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palmer Lake";
+  src: url("./fonts/Palmer\ Lake/Jen\ Wagner\ Co\.\ -\ Palmer\ Lake\ Print\ Regular.otf");
+  font-weight: 400; /* regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/Sofia\ Pro/Mostardesign\ -\ Sofia\ Pro\ Light.otf");
+  font-weight: 300; /* light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/Sofia\ Pro/Mostardesign\ -\ Sofia\ Pro\ Regular.otf");
+  font-weight: 400; /* regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/Sofia\ Pro/Mostardesign\ -\ Sofia\ Pro\ Medium.otf");
+  font-weight: 500; /* medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts/Sofia\ Pro/Mostardesign\ -\ Sofia\ Pro\ Bold.otf");
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-Regular.otf");
+  font-weight: 400; /* regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-Bold.otf");
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sofia Pro";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 126.8rem;
+  max-width: 126.8rem;
+  margin-inline: auto;
+}
+
+.container-narrow {
+  max-width: 74.8rem;
+  margin-inline: auto;
+}
+
+.dark-background {
+  background-color: #15364c;
+}
+
+.light-background {
+  background-color: #f9f6f4;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+header .container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.heading {
+  font-size: 12rem;
+}
+
+.heading div {
+  display: flex;
+  align-items: center;
+  line-height: 1.1;
+  justify-content: center;
+}
+
+.heading .bring-your svg {
+  margin-top: 0.25em;
+}
+
+.heading .bring-your span:nth-of-type(1) {
+  color: #e7e1d9;
+}
+
+.heading .bring-your span:nth-of-type(2) {
+  color: #edcfcc;
+}
+
+.heading .bring-your span:nth-of-type(3) {
+  color: #a6c3d2;
+}
+
+.heading .bring-your span:nth-of-type(4) {
+  color: #cadbe4;
+}
+
+.heading .bring-your span:nth-of-type(5) {
+  color: #e9e1d7;
+}
+
+.heading .bring-your span:nth-of-type(6) {
+  color: #edcfcc;
+}
+
+.heading .bring-your span:nth-of-type(7) {
+  color: #a6c3d2;
+}
+
+.heading .bring-your span:nth-of-type(8) {
+  color: #e7e1d9;
+}
+
+.heading .baggage span:nth-of-type(1) {
+  color: #edcfcc;
+}
+
+.heading .baggage span:nth-of-type(2) {
+  color: #9fc4d4;
+}
+
+.heading .baggage span:nth-of-type(3) {
+  color: #cadbe4;
+}
+
+.heading .baggage span:nth-of-type(4) {
+  color: #e9e1d7;
+}
+
+.heading .baggage span:nth-of-type(5) {
+  color: #edcfcc;
+}
+
+.heading .baggage span:nth-of-type(6) {
+  color: #a6c3d2;
+}
+
+.heading .baggage span:nth-of-type(7) {
+  color: #e7e1d9;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6.7rem;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.link-text {
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.color-bars {
+  display: flex;
+}
+
+.color-bar {
+  height: 1.2rem;
+  flex-grow: 1;
+}
+
+.light-blue-bar {
+  background-color: #cddbe3;
+}
+.mid-blue-bar {
+  background-color: #a6c3d2;
+}
+.light-brown-bar {
+  background-color: #e7e1d9;
+}
+.light-red-bar {
+  background-color: #e8d0cd;
+}
+
+section#join {
+  padding-block: 7.2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #15364c;
+}
+
+section#join h2 {
+  font-family: "Raleway";
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.img-container {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.img-container span {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0.2rem 0rem 0.2rem #15364c;
+}
+
+section#join h3 {
+  margin-bottom: 2.3rem;
+  font-size: 2.2rem;
+}
+
+.text-container {
+  margin-bottom: 4.8rem;
+  font-size: 1.6rem;
+}
+
+.text-container p {
+  color: #2f6079;
+}
+
+.btn {
+  padding-block: 1rem;
+  padding-inline: 9.2rem;
+  border-radius: 0.8rem;
+  background-color: #e8d0cd;
+  font-size: 1.7rem;
+  font-family: "Brandon Grotesque";
+  font-weight: bold;
+  color: #15364c;
+}
+
+.reception-image-background {
+  position: absolute;
+  height: 100%;
+  right: 5%;
+  top: 0%;
+  scale: 1.2;
+  z-index: -1;
+}
+
+.common-heading-container {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  margin-bottom: 2.6rem;
+}
+
+.common-heading-container h2 {
+  font-size: 2.2rem;
+  color: #15364c;
+  text-transform: uppercase;
+}
+
+.common-heading-container .horizontal-line {
+  height: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+/*                                    Our Story section                                                                 */
+
+#our-story {
+  background-color: #f9f6f4;
+  color: #15364c;
+  padding-top: 4.2rem;
+  padding-bottom: 8.7rem;
+}
+
+#our-story .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin-bottom: 3.5rem;
+}
+
+.card {
+  display: flex;
+  gap: 2.8rem;
+  font-size: 1.6rem;
+  color: #2f6079;
+}
+
+#our-story .message {
+  font-family: "Palmer Lake";
+  font-size: 2.8rem;
+  text-align: right;
+  margin-right: 6.4rem;
+}
+
+.underline-text {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*                             How it works section                                              */
+#works {
+  padding-top: 4.8rem;
+  padding-bottom: 7.2rem;
+  text-align: center;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.8rem;
+  margin-bottom: 6.7rem;
+}
+
+.features-container h2 {
+  color: #15364c;
+}
+
+.features-container svg {
+  margin-bottom: 1.7rem;
+}
+
+.features-container h3 {
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  color: #13364d;
+}
+
+.features-container p {
+  font-size: 1.8rem;
+  color: #2f6079;
+}
+/*                                     Become operating partner                                 */
+#become-partner {
+  padding-top: 4.2rem;
+  padding-bottom: 8.2rem;
+  background-color: #f9f6f4;
+  font-size: 1.6rem;
+  color: #2f6079;
+}
+
+#become-partner .common-heading-container {
+  margin-bottom: 3rem;
+}
+
+#become-partner h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.facts-list li {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.facts-list li .index {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.1rem;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  flex-shrink: 0;
+  background-image: url(./images/blob.svg);
+  background-size: cover;
+  margin-top: 0.5rem;
+}
+
+/*                                          Design construction                                        */
+
+#design-construction {
+  padding-top: 4.8rem;
+  padding-bottom: 6.2rem;
+}
+
+#design-construction .img-container span.blue {
+  color: #9fc4d4;
+}
+
+#design-construction .card-body p:first-of-type {
+  margin-bottom: 1.6rem;
+}
+
+#design-construction .card {
+  margin-bottom: 3.2rem;
+}
+
+
+/*                                       Training support                                                    */
+#training-support {
+  padding-top: 3.2rem;
+  padding-bottom: 7.3rem;
+  background-color: #f9f6f4;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.3rem;
+}
+
+#training-support h3 {
+  font-size: 1.6rem;
+  color: #2f6079;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.trainings-supports-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.trainings-supports-container li .bullet {
+  width: 0.7rem;
+  height: 0.6rem;
+  background-image: url(./images/blob.svg);
+  background-size: cover;
+  flex-shrink: 0;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.trainings-supports-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.trainings-supports-container li {
+  display: flex;
+  gap: 1rem;
+  color: #2f6079;
+}
+/*                                     sign up                                                        */
+#sign-up {
+  padding-top: 6.2rem;
+  padding-bottom: 15.5rem;
+}
+
+#sign-up h3 {
+  font-size: 1.6rem;
+  color: #2f6079;
+  margin-bottom: 3.6rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 4.2rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: end;
+  gap: 1.6rem;
+}
+
+.form-col {
+  flex-grow: 1;
+  display: flex;
+  gap: 1.7rem;
+  flex-direction: column;
+}
+
+form label {
+  color: #2f6079;
+}
+
+form input,
+textarea,
+select {
+  padding-block: 0.8rem;
+  padding-inline-start: 1.3rem;
+  border-radius: 0.8rem;
+  border: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.08);
+  font-size: 1.6rem;
+  width: 100%;
+  color: #15364c;
+}
+
+form input:focus,
+textarea:focus,
+select:focus {
+  outline: 0.2rem solid hsla(200, 44%, 33%, 0.5);
+}
+
+select {
+  background: none;
+  padding-right: 1em;
+  font-size: 1.6rem;
+}
+
+select.empty {
+  color: #aaafb2;
+}
+
+form input::placeholder {
+  color: #aaafb2;
+  font-size: 1.6rem;
+}
+
+form button {
+  align-self: center;
+}
+
+
+/*                                           footer section                                         */
+
+footer {
+  background-color: #15364c;
+  padding-top: 2.6rem;
+  padding-bottom: 4.6rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+footer .container-narrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.logo-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-media-links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+
+
+
+
